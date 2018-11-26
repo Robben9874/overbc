@@ -4,7 +4,7 @@ const RichEmbed = require("discord.js");
 const { Client, Util } = require('discord.js');
 
 client.on('message',async message => {
-    var prefix = "B";
+    var prefix = "o";
     if(message.content.startsWith(prefix + "bc")) {
       if(!message.member.hasPermission('ADMINISTRATOR')) return;
       let filter = m => m.author.id === message.author.id;
@@ -61,7 +61,7 @@ client.on('message',async message => {
             });
 const devs = ["474175378118803466"]
 
-const adminprefix = "B";
+const adminprefix = "o";
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!devs.includes(message.author.id)) return;
